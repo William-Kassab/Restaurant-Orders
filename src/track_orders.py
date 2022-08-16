@@ -36,7 +36,7 @@ class TrackOrders:
         foods = set([x['order'] for x in orders])
         joao_orders = set(
             [
-                order['order'] for order in orders if order['customer'] == customer
+                ord['order'] for ord in orders if ord['customer'] == customer
             ]
         )
         never_ordered = foods - joao_orders

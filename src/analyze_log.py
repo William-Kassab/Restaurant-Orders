@@ -8,6 +8,7 @@ def maria(orders):
 
     return max(set(most_requested), key=most_requested.count)
 
+
 def arnaldo(orders):
     food = list()
 
@@ -17,6 +18,7 @@ def arnaldo(orders):
             food.append(line)
 
     return food.count('hamburguer')
+
 
 def joao(orders):
     food = list()
